@@ -1,5 +1,5 @@
 package com.webusercl.creacionusuario.controller;
 
-public class UsuarioController {
+public class UserController {
 
 }

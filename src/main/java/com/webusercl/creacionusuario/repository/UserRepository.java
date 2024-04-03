@@ -1,4 +1,4 @@
 package com.webusercl.creacionusuario.repository;
 
-public interface UsuarioRepository {
+public interface UserRepository {
 }

@@ -1,4 +1,4 @@
 package com.webusercl.creacionusuario.dto;
 
-public class UsuarioDTO {
+public class UserDTO {
 }
