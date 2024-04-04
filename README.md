@@ -81,3 +81,10 @@
     </ul>
 </li>
 </ul>
+<br>
+<h2>🛢️Base de Datos</h2>
+<img src="http://imgfz.com/i/3ubIZgG.png">
+
+<br>
+<h2>🏗️Arquitectura</h2>
+<img src="http://imgfz.com/i/RUh1rT6.png">
