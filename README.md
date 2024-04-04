@@ -92,3 +92,33 @@
 <br>
 <h2>🏗️Arquitectura</h2>
 <img src="http://imgfz.com/i/RUh1rT6.png">
+<br>
+<h2>🛠️Como Probar la API con Postman</h2>
+<p>A continuación, se detallan los pasos para probar los endpoints de la API utilizando Postman:</p>
+<h3>EndPoint - Creación de Usuario</h3>
+<ol>
+<li> Seleccionar la acción POST y luego ingresar la url : http://localhost:8080/api/users </li>
+<li> Seleccionar la opcion raw </li>
+<li> Seleccionar la opcion JSON </li>
+<li> Ingresar el siguiente json:
+<pre>
+{
+  "name": "Juan Rodriguez",
+  "email": "juanflo@dominio.cl",
+  "password": "ABC_2024jf",
+  "phones": [
+    {
+      "number": "1234567",
+      "citycode": "1",
+      "contrycode": "57"
+    }
+  ]
+}
+</pre>
+</li>
+<li> Seleccionar el botón Send</li>
+<li> Ver los resultados</li>
+<li> Demostración:</li>
+</ol>
+<img src="http://imgfz.com/i/vpGQC5t.png">
+

@@ -9,17 +9,16 @@ import com.webusercl.creacionusuario.exception.EmailExistsException;
 import com.webusercl.creacionusuario.exception.InvalidEmailFormatException;
 import com.webusercl.creacionusuario.exception.InvalidPasswordFormatException;
 import com.webusercl.creacionusuario.service.UserService;
+import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 
 @RestController
+@RequestMapping("/api")
 public class UserController {
 
     private final UserService userService;
@@ -31,6 +30,8 @@ public class UserController {
         this.objectMapper = objectMapper;
     }
 
+
+    @Operation(summary = "Endpoint que  permite crear un nuevo usuario", description = "Endpoint que  permite crear un nuevo usuario")
     @PostMapping("/users")
     public ResponseEntity<UserCreateDTO> createUser(@RequestBody String json) {
         try {
@@ -56,9 +57,10 @@ public class UserController {
     }
 
 
+    @Operation(summary = "Endpoint que lista todos los usuarios registrados", description = "Endpoint que lista todos los usuarios registrados")
     @GetMapping("/users")
-    public List<UserDTO> listUsers() {
-        return userService.listUsers();
+    public ResponseEntity<List<UserDTO>> listUsers() {
+        return ResponseEntity.ok(userService.listUsers());
     }
 
 
