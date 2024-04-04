@@ -11,6 +11,8 @@ import com.webusercl.creacionusuario.utils.Constans;
 import com.webusercl.creacionusuario.utils.Mappers;
 import com.webusercl.creacionusuario.utils.Utils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Service;
 
 import java.text.SimpleDateFormat;
@@ -20,7 +22,13 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
+@PropertySource("classpath:application.properties")
 public class UserServiceImpl  implements UserService{
+
+    @Value("${email.regex}")
+    private String emailRegex;
+    @Value("${password.regex}")
+    private String passwordRegex;
 
     private final UserRepository userRepository;
 
@@ -42,13 +50,13 @@ public class UserServiceImpl  implements UserService{
         }
 
         String email = user.getEmail();
-        if (!email.matches("[a-zA-Z]{7}@dominio\\.cl")) {
+        if (!email.matches(emailRegex)) {
             System.out.println("Mostrar excepción, el correo no tiene el formato adecuado");
             throw new InvalidEmailFormatException("El formato del correo electrónico no es válido");
         }
 
         String password = user.getPassword();
-        if (password.matches(Constans.KEY_REGEX)){
+        if (password.matches(passwordRegex)){
             System.out.println("formato no adecuado para el password");
             throw new InvalidPasswordFormatException("El formato del password no es válido");
         }
