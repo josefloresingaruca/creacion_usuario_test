@@ -181,7 +181,7 @@
 <img src="http://imgfz.com/i/FUJDpnQ.png">
 </li>
 </ol>
-<h2>🛢️Autor</h2>
+<h2>‍👨‍💻Autor</h2>
 <ul>
 <li><b>José Miguel Flores Ingaruca</b> - <a href="https://www.linkedin.com/in/jose-miguel-flores-ingaruca/">Linkedin</a> </li> 
 </ul>
