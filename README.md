@@ -143,7 +143,8 @@
 
 <br>
 <h2>🛠️Como Probar la API con Swagger</h2>
-<p>A continuación, se detallan los pasos para probar los endpoints de la API utilizando Swagger:</p>
+<p>A continuación, se detallan los pasos para probar los endpoints de la API utilizando Swagger :</p>
+<p>URL: http://localhost:8080/swagger-ui/index.html#/ </p>
 <h3>EndPoint - Creación de Usuario</h3>
 
 <ol>
