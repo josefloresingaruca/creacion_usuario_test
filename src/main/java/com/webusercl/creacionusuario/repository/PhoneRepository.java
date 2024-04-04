@@ -1,13 +1,12 @@
 package com.webusercl.creacionusuario.repository;
 
+import com.webusercl.creacionusuario.model.Phone;
 import com.webusercl.creacionusuario.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.Optional;
-
+import java.util.Set;
 @Repository
-public interface UserRepository extends JpaRepository<User,Long> {
-     Optional<User> findByEmail(String email);
+public interface PhoneRepository  extends JpaRepository<Phone,Long> {
+
 }
