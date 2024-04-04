@@ -183,7 +183,7 @@
 </ol>
 <h2>🛢️Autor</h2>
 <ul>
-<li><b>José Miguel Flores Ingaruca</b></li> - <a href="https://www.linkedin.com/in/jose-miguel-flores-ingaruca/">Linkedin</a>
+<li><b>José Miguel Flores Ingaruca</b> - <a href="https://www.linkedin.com/in/jose-miguel-flores-ingaruca/">Linkedin</a> </li> 
 </ul>
 
 
