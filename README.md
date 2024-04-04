@@ -141,3 +141,46 @@
 </li>
 </ol>
 
+<br>
+<h2>🛠️Como Probar la API con Swagger</h2>
+<p>A continuación, se detallan los pasos para probar los endpoints de la API utilizando Swagger:</p>
+<h3>EndPoint - Creación de Usuario</h3>
+
+<ol>
+<li> Seleccionar botón POST</li>
+<li> Ingresar el siguiente json:
+<pre>
+{
+  "name": "Juan Rodriguez",
+  "email": "juanflo@dominio.cl",
+  "password": "ABC_2024jf",
+  "phones": [
+    {
+      "number": "1234567",
+      "citycode": "1",
+      "contrycode": "57"
+    }
+  ]
+}
+</pre>
+</li>
+<li> Seleccionar el botón Execute</li>
+<li> Ver los resultados</li>
+<li> Demostración:
+<img src="http://imgfz.com/i/HevpEKy.png">
+</li>
+</ol>
+<br>
+<h3>EndPoint - Listar de Usuarios</h3>
+<ol>
+<li> Seleccionar el botón GET </li>
+<li> Seleccionar el botón Execute</li>
+<li> Ver los resultados</li>
+<li> Demostración:
+<img src="http://imgfz.com/i/FUJDpnQ.png">
+</li>
+</ol>
+
+
+
+
