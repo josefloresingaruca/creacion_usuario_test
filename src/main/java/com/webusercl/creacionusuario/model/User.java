@@ -31,6 +31,8 @@ public class User {
 
     private Integer isactive;
 
+    private String token;
+
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private Set<Phone> phones;
 

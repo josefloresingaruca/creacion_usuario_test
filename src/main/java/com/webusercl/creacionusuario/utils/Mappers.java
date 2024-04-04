@@ -56,7 +56,7 @@ public class Mappers {
         userCreateDTO.setCreated(dateFormat.format(user.getCreated()));
         userCreateDTO.setModified(user.getModified() != null ? dateFormat.format(user.getModified()) : null);
         userCreateDTO.setLastLogin(dateFormat.format(user.getLastLogin()));
-        userCreateDTO.setToken(Utils.generateJwtToken(user.getEmail()));
+        userCreateDTO.setToken(user.getToken());
         userCreateDTO.setIsactive(user.getIsactive() == 1 ? "activo" : "inactivo");
         return userCreateDTO;
     }
