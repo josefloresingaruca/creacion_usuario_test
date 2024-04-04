@@ -123,7 +123,30 @@
 <br>
 <h2>🏗️Arquitectura</h2>
 <img src="http://imgfz.com/i/RUh1rT6.png">
+
 <br>
+
+
+<h2>🛠️Como descargar y ejecutar el proyecto en tu PC</h2>
+<p>A continuación, se detallan los pasos para poder ejecutarlo en tu pc:</p>
+<ol>
+<li> clonar el proyecto de github : https://github.com/josefloresingaruca/creacion_usuario_test.git 
+<img src="http://imgfz.com/i/76AJQ9k.png">
+</li>
+<li> Abrir con el IDE IntelliJ IDEA y esperar que se configuren y descarguen las dependencias del pom
+<img src="http://imgfz.com/i/FsrzWwv.png"> <br>
+<img src="http://imgfz.com/i/cAzG7s2.png">
+</li>
+
+<li> Ejecutar el proyecto 
+<img src="http://imgfz.com/i/f6C2Eow.png">
+</li>
+
+</ol>
+
+<br>
+
+
 <h2>🛠️Como Probar la API con Postman</h2>
 <p>A continuación, se detallan los pasos para probar los endpoints de la API utilizando Postman:</p>
 <h3>EndPoint - Creación de Usuario</h3>
