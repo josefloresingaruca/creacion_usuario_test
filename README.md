@@ -60,7 +60,37 @@
 </pre>
 </li>
 </ul>
-
+<br>
+<h3>Listar Usuario</h3>
+<ul>
+<li>URL: /api/users</li>
+<li>Método HTTP: GET</li>
+<li>Descripción: Este endpoint devuelve una lista de todos los usuarios registrados en el sistema.</li>
+<li>Datos de Entrada: No se requieren parámetros de entrada.</li>
+<li>Datos de Salida: 
+<pre>
+[
+    {
+        "name": "Juan Rodriguez",
+        "email": "juanflo@dominio.cl",
+        "password": "ADT_2024jf",
+        "created": "2024-04-04 03:02:10",
+        "modified": null,
+        "lastLogin": "2024-04-04 03:02:10",
+        "isactive": 1,
+        "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqdWFuZmxvQGRvbWluaW8uY2wifQ.fDyQPVnFGSzezDQ_usq8wP6oXr-vhH116rGgk8X7x63JiubliPIB6JpJ9qhkr1qKodD5U6AwLOBXfKFoBV3w_g",
+        "phones": [
+            {
+                "number": "1234567",
+                "citycode": "1",
+                "contrycode": "57"
+            }
+        ]
+    }
+]
+</pre>
+</li>
+</ul>
 <br>
 <h2>🛠️Manejo de Errores</h2>
 <p>En caso de que ocurra algún error durante el proceso de registro, se devolverá una respuesta con el código de estado correspondiente y un mensaje descriptivo del error.</p>
@@ -87,6 +117,7 @@
 </ul>
 <br>
 <h2>🛢️Base de Datos</h2>
+<p>El proyecto utiliza H2 Database, una base de datos relacional en memoria, para almacenar los datos de los usuarios registrados y sus detalles de contacto. H2 es una opción popular para entornos de desarrollo y pruebas debido a su facilidad de uso y su capacidad para ejecutarse en memoria, lo que permite una configuración rápida y sin necesidad de una instalación de base de datos externa.</p>
 <img src="http://imgfz.com/i/3ubIZgG.png">
 
 <br>
@@ -179,6 +210,18 @@
 <li> Ver los resultados</li>
 <li> Demostración:
 <img src="http://imgfz.com/i/FUJDpnQ.png">
+</li>
+</ol>
+
+<br>
+<h2>🛠️Ejecutar Prueba Unitaria</h2>
+<p>A continuación, se detallan los pasos para ejecutar los Test de Prueba Unitaria :</p>
+<ol>
+<li> Seleccionar la clase UserControllerTest ubicado dentro de la carpeta test </li>
+<li> Ejecutar los Test de la clase, seleccionar Run UserControllerTest </li>
+<li> Ver los resultados </li>
+<li> Demostración:
+<img src="http://imgfz.com/i/AaNWPEs.png">
 </li>
 </ol>
 <h2>‍👨‍💻Autor</h2>
