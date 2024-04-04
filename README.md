@@ -15,11 +15,15 @@
 <br>
 <h2>💻Tecnologías Utilizadas:</h2>
 <ul>
-<li>Java: Lenguaje de programación principal del proyecto - JAVA VERSIÓN 17.</li>
-<li>Spring Boot: Framework utilizado para desarrollar la API REST.</li>
-<li>Maven: Herramienta de gestión de dependencias y construcción del proyecto.</li>
-<li>Jackson: Biblioteca para el procesamiento de datos JSON. </li>
-<li>Mockito: Framework de pruebas unitarias para Java. </li>
+<li><b>Java 17</b>: Lenguaje de programación principal del proyecto.</li>
+<li><b>Spring Boot 3.2.4</b>: Framework utilizado para desarrollar la API REST.</li>
+<li><b>Maven</b>: Herramienta de gestión de dependencias y construcción del proyecto.</li>
+<li><b>Jackson</b>: Biblioteca para el procesamiento de datos JSON. </li>
+<li><b>Mockito</b>: Framework de pruebas unitarias para Java. </li>
+<li><b>Swagger</b>: Herramienta para diseñar, crear y documentar APIs REST de manera sencilla. </li>
+<li><b>EclipseLink</b>: Implementación de la especificación JPA (Java Persistence API) para el mapeo objeto-relacional. </li>
+<li><b>Spring Data JPA</b>: Parte del proyecto Spring Data, proporciona una capa de abstracción para el manejo de la persistencia de datos basada en JPA. </li>
+<li><b>H2 Database</b>: Base de datos relacional embebida escrita en Java, utilizada para el desarrollo y pruebas de la aplicación. </li>
 </ul>
 <br>
 <h2>📍Endpoints</h2>
@@ -61,20 +65,20 @@
 <h2>🛠️Manejo de Errores</h2>
 <p>En caso de que ocurra algún error durante el proceso de registro, se devolverá una respuesta con el código de estado correspondiente y un mensaje descriptivo del error.</p>
 <ul>
-<li>Formato de Correo Electrónico Inválido:
+<li><b>Formato de Correo Electrónico Inválido</b>:
     <ul>
         <li> Código de Estado: 400 Bad Request</li>
         <li> Mensaje de Error: "El formato del correo electrónico es inválido"</li>
     </ul>
 
 </li>
-<li>Contraseña Inválida:
+<li><b>Contraseña Inválida</b>:
   <ul>
         <li> Código de Estado: 400 Bad Request</li>
         <li> Mensaje de Error: "El formato de la contraseña es inválido"</li>
     </ul>
 </li>
-<li>Correo Electrónico Ya registrado:
+<li><b>Correo Electrónico Ya registrado</b>:
  <ul>
         <li> Código de Estado: 409 Conflict</li>
         <li> Mensaje de Error: "El correo electrónico ya está registrado"</li>
