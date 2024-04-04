@@ -118,7 +118,26 @@
 </li>
 <li> Seleccionar el botón Send</li>
 <li> Ver los resultados</li>
-<li> Demostración:</li>
-</ol>
+<li> Demostración:
 <img src="http://imgfz.com/i/vpGQC5t.png">
+</li>
+<li> Validaciones:
+        <ul>
+                <li> El EndPoint impide el registro de un usuario si el correo electrónico proporcionado ya existe en la base de datos.</li>
+                <li> El EndPoint impide el registro de un usuario si el correo electrónico proporcionado no tiene el formato  <b>aaaaaaa@dominio.cl</b>  .</li>
+                <li> El EndPoint impide el registro de un usuario si el password no cumple con tener  al menos una letra (mayúscula o minúscula),  al menos un dígito numérico, al menos uno de los caracteres especiales. Puede contener letras (mayúsculas o minúsculas), dígitos o cualquiera de los caracteres especiales @$!%*?&.  .</li>
+        </ul>
+</li>
+</ol>
+
+<br>
+<h3>EndPoint - Listar de Usuarios</h3>
+<ol>
+<li> Seleccionar la acción GET y luego ingresar la url : http://localhost:8080/api/users </li>
+<li> Seleccionar el botón Send</li>
+<li> Ver los resultados</li>
+<li> Demostración:
+<img src="http://imgfz.com/i/F4E6WQB.png">
+</li>
+</ol>
 
